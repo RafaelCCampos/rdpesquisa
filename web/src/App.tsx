@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from './components/Header';
+import Home from './pages/Home';
+
 import './App.css';
 
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <div>
+      <Header/>
+      <Home/>
+    </div>
   );
 }
 
