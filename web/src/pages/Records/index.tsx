@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
 import Pagination from './Pagination';
-
+import Filters from '../../components/Filters';
 import {RecordsResponse} from './types';
 import {formatDate} from './helpers';
 
@@ -22,6 +22,10 @@ const Records = () => {
 
     return  (
         <div className="page-container">
+            <Filters
+                link="/charts"
+                linkText="VER GRÁFICOS"
+            />
             <table className="records-table" cellPadding="0" cellSpacing="0">
                 <thead>
                     <tr>
