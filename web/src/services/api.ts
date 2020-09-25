@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 const api = Axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: 'https://rdpesquisa.herokuapp.com',
 });
 
 export default api;
